@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arima:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+
+    <link rel="stylesheet" href="CSS/Estilos.css">
+
+    <title>Carrito de Compras Henry</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <nav>
+            <img src="Imagenes/logo_transparent.png" alt="Logo transparente">
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#raices">Trekking</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <ul class="headerlist2">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Section Productos -->
+
+        <section id="productos">
+            <div id="contenedorProductos">
+
+            </div>
+
+        </section>
+        <!-- Carrito de Compras -->
+
+        <section id="carrito">
+            <div class="pagos">
+                <h1>¿Que estás llevando?</h1>
+                <ul></ul>
+                <p>Total a pagar: $0</p>
+                <input id="btnBorrar" type="button" value="Borrar">
+                <input id="btnPagar" type="button" value="Ir a Pagar">
+                <p id="mensaje"></p>
+            </div>
+        </section>
+
+        <!-- Section Trekking(Video)-->
+
+        <section id="raices">
+            <video src="Video/Trekking2.mp4" autoplay loop></video>
+
+            <!-- Section Contacto (Formulario)-->
+
+        </section>
+        <section id="contacto">
+            <h2>Nos encantaría encontrar ese producto para vos</h2>
+            <fieldset class="formulario">
+                <form action="https://formspree.io/f/mwpkydnq" method="post">
+                    <label for="nombre">Nombre:
+                        <input type="text" name="nombre" value="" id="nombre" size="30">
+                    </label>
+
+                    <label for="email">E-mail:
+                        <input type="email" name="email" value="" id="email" size="30">
+                    </label>
+
+                    <label for="codigo">Código:
+                        <input type="text" name="codigo" value="" id="codigo" size="30">
+                    </label>
+
+                    <label for="marca">Marca:
+                        <input type="text" name="marca" value="" id="marca" size="30">
+                    </label>
+
+                    <label for="genero">Genero:
+                        <select name="genero" id="genero">
+                            <option value="mujer">Mujer</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="niños">Niños</option>
+                        </select>
+                    </label>
+                    <label for="descripcion">Descripcion:
+                        <textarea name="descripcion" id="descripcion" rows="5" cols="30"></textarea>
+                    </label>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+
+        <!-- Direcciones y Links -->
+
+        <section id="informacion">
+            <h2 class="info-links">Donde encontrarnos y alguno de nuestros links de información</h2>
+            <div class="links1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3390.1365101384513!2d-58.424352789275666!3d-34.57913471062062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1735236572219!5m2!1ses!2sar"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="links2">
+                <ul>
+                    <li>Visita el sitio en el cual nos <a href="https://www.dexter.com.ar/">inspiramos.</a></li>
+                    <li>Guia de talles, click <a href="/Imagenes/talles.jpg" download>aquí.</a></li>
+                    <li>Comunicate con nuestro equipo directamente <a href="mailto:contacto@shopper.com.ar">acá.</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Reseñas -->
+
+        <section id="opiniones">
+            <div class="opinion-titulo">
+                <h2>Tu opinión, nos mejora un montón.</h2>
+                <p>Lo que dicen nuestros clientes</p>
+            </div>
+            <div class="reseñas">
+                <div class="reseña1">
+                    <h2>Calzados de Trail</h2>
+                    <p>Los calzados de trail son cómodos y resistentes, ofrecen buen agarre, pero pueden resultar algo
+                        pesados en terrenos planos.</p>
+                    <cite>Andres Leon</cite>
+                </div>
+
+                <div class="reseña2">
+                    <h2>Calidad de ropa</h2>
+                    <p>La ropa de trekking es muy cómoda, resistente y perfecta para protegerte del clima, ideal para
+                        cualquier aventura al aire libre.</p>
+                    <cite>Angelica Ocando</cite>
+                </div>
+
+                <div class="reseña3">
+                    <h2>La soga de 6cm</h2>
+                    <p>La soga de trekking es robusta y útil, pero puede resultar algo pesada. Aun así, brinda seguridad
+                        extra.</p>
+                    <cite>Paola Rivero</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footercarrito">
+        <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scrips.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+html {
+    margin: 0 100px;
+    scroll-behavior: smooth;
+}
+
+@media (width < 760px){
+    html {
+        margin: 0px;
+    }
+}
+
+/*header*/
+
+header {
+    background-color: olive;
+    padding: 0 50px ;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 8rem;
+    height: 8rem;
+}
+
+header a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    
+}
+
+header ul i {
+    font-size: 1.2rem;
+}
+
+nav ul li:hover {
+    background: #eca023;
+    border-radius: 10px;
+}
+
+@media (width < 760px){
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header img {
+        width: 50%;
+        height: 50%;
+    }
+
+
+}
+
+/*Productos*/
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(/Imagenes/montañas_grises_fondo.png);
+    background-size: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#contenedorProductos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0.37);
+    padding: 1rem;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 5px;
+}
+
+.tarjeta img {
+    width: 70%;
+    height: 190px;
+}
+
+.precio {
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.349) 1px 2px 2px;
+}
+
+.btn-carrito{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #b98800; /* Color base del botón */
+    transition: transform 0.3s ease-in-out
+}
+
+.btn-carrito:hover{
+    background-color: #684d02;
+}
+
+.btn-carrito:active{
+    transform: scale(0.9);
+}
+
+@media (width < 760px) {
+    #productos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 70px;
+    }
+    .tarjeta{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .tarjeta img {
+        width: 50%;
+        height: 30%;
+    }
+
+    #contenedorProductos{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* CARRITO DE COMPRAS */
+
+#carrito {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pagos {
+    background-color: #eca023;
+    padding: 20px;
+    align-content: center;
+}
+
+#carrito h1 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+#carrito ul, li, p {
+    list-style: none;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+#btnBorrar, #btnPagar {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #5f0202; /* Color base del botón */
+    transition: transform 0.3s ease-in-out
+}
+
+#btnBorrar:hover, #btnPagar:hover{
+    background-color: #fa2323;
+}
+
+#btnBorrar:active, #btnPagar:active{
+    transform: scale(0.9);
+}
+
+/* Video */
+
+#raices video {
+    width: 100%;
+}
+
+/* Contactos */
+
+#contacto {
+    background-color: #f39909;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content:space-around;
+}
+
+#contacto h2 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 3rem;
+    width: 50%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+
+.formulario {
+    width: 50%;
+    background-color: rgba(240, 248, 255, 0.39);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.formulario input, button, label, option {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+@media (width < 760px) {
+    #contacto {
+        flex-direction: column;
+
+    }
+    .formulario {
+        width: auto;
+    }
+
+}
+
+/*Direcciones y links*/
+
+#informacion {
+    display: grid;
+    grid-template-areas:
+    "iframe titulo"
+    "links titulo" ;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(2, 122, 102);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 20px;
+    padding: 20px;
+}
+
+#informacion .links1 {
+    grid-area: iframe;
+}
+#informacion .links2 {
+    grid-area: links;
+    background-color: rgba(240, 248, 255, 0.548);
+    border-radius: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    padding: 10px;
+}
+#informacion .info-links {
+    grid-area: titulo;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 3rem;
+    text-align:right;
+}
+
+.links1 iframe{
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+@media (width < 760px) {
+    #informacion {
+        grid-template-areas:
+        "titulo"
+        "iframe"
+        "links";
+        grid-template-columns: 1fr;
+    }
+}
+/*Reseñas*/
+
+#opiniones {
+    background-image: url(/Imagenes/Trekking-Reseñas.png);
+    padding: 1rem;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal
+}
+
+.opinion-titulo {
+    color: aliceblue;
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+}
+.reseña1, .reseña2, .reseña3 {
+    background-color: rgba(240, 248, 255, 0.575);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 5px 5px rgba(255, 217, 0, 0.514);
+}
+
+.reseña1:hover, .reseña2:hover, .reseña3:hover {
+    transform: translateY(-10px)
+}
+
+@media (width < 760px){
+    .reseñas {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 30px;
+    }
+}
+/*Footer*/
+
+.footercarrito {
+    background-color: gray;
+}
